@@ -1,0 +1,46 @@
+Part 1
+4.1.2
+   Picture included
+4.1.4
+   public boolean hasEdge(int v, int w)
+   {
+      validateVertex(v);
+      validateVertex(w);
+      
+      for(int s: adj[v])
+      {
+         if(s == w)
+            return true;
+      }
+      
+      return false;
+   }
+   
+Part 2
+4.2.2
+   Picture included
+4.2.4
+   public boolean hasEdge(int v, int w)
+   {
+      validateVertex(v);
+      validateVertex(w);
+      
+      for(int s: adj[v])
+      {
+         if(s == w)
+            return true;
+      }
+      
+      return false;
+   }
+
+Part 3
+4.3.6
+   Picture included
+
+Part 4
+   EdgeWeightedDigraphArray.java is included
+      This version of the original EdgeWeightedDigraph.java has been changed to use two-dimensional array of weights
+      It is able to do so by not using Bag.java(uses linked lists) but instead using ResizingArrayStack.java which is found on the book website.
+      
+      EdgeWeightedDigraphArray.java is included along with ResizingArrayStack.java and mediumEWD.txt
